@@ -10,10 +10,14 @@ import { Product } from "./product";
 import { Greeting } from "./Greeting";
 import { CardWrapper } from "./CardWrapper";
 import { UserDetails } from "./UserDetails";
+import { ProductList } from "./ProductList";
+import { NameList } from "./NameList";
 
 function App() {
   return (
     <div>
+      <NameList />
+      <ProductList />
       <UserDetails name="Bruce Wayne" isOnline={true} isPremium={true} isNewUser={true} role="admin"/>
       <UserDetails name="Clark Kent" isOnline={true} hideOffline={true} role="vip"/>
       <CardWrapper title="User Profile">
