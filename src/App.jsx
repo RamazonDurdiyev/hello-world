@@ -12,10 +12,24 @@ import { CardWrapper } from "./CardWrapper";
 import { UserDetails } from "./UserDetails";
 import { ProductList } from "./ProductList";
 import { NameList } from "./NameList";
+import { Alert } from "./Alert";
+import { NewButton } from "./NewButton";
+import { CustomButtom } from "./CustomButtom";
+import { Contact } from "./Contact";
+import { Newsletter } from "./Newsletter";
+import { Menu } from "./Menu";
 
 function App() {
   return (
     <div>
+      <Menu />
+      <Contact />
+      <Newsletter />
+      <CustomButtom text="Like"/>
+      <CustomButtom text="Bookmark"/>
+      <Alert>Success!</Alert>
+      <Alert type="error">Error!</Alert>
+      <NewButton />
       <NameList />
       <ProductList />
       <UserDetails name="Bruce Wayne" isOnline={true} isPremium={true} isNewUser={true} role="admin"/>
